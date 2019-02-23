@@ -3,3 +3,24 @@
   margin: 0 auto;
   padding: 2rem 0;
 }
+
+@media only screen and (min-width: 48em) {
+  .tour-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .tour-list {
+    width: 85vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 71.25em) {
+  .tour-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
